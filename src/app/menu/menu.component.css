@@ -1,0 +1,70 @@
+
+.menu-box{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.container-img{
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 338px;
+  height: 124px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.paragraf-box{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 23%;
+  left: 32%;
+  width: 100%;
+}
+
+h3{
+  font-size: 24px;
+  color: white;
+  margin: 0;
+  font-weight: bold;
+  text-shadow: 1.3px 1.6px 1px rgba(0, 0, 0, 1);
+}
+
+p{
+  margin: 4px 0px 0px 0px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  text-shadow: 1.3px 1.6px 1px rgba(0, 0, 0, 1);
+}
+
+
+.container-img:hover{
+  transform: scale(1.03);
+}
+
+.img1{
+  background-image: url(../../assets/images/ButtonClassic.a8c09c40.webp);
+}
+
+.img2{
+  background-image: url(../../assets/images/ButtonDevil.e2d70306.webp);
+}
+
+.img3{
+  background-image: url(../../assets/images/ButtonWanted.02e1027b.webp);
+}
+
+.img4{
+  background-image: url(../../assets/images/ButtonLaugh.d2e4088d.webp);
+}
+
+

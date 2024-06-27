@@ -1,0 +1,42 @@
+<div class="container">
+  <img src="../../../assets/images/Logo.3ab8c915.webp" class="logo">
+
+  <div class="box">
+
+    <div class="icon-box">
+      <img [ngClass]="{'img-selected': iconSelected === 1}"
+        src="../../../assets/images/Classic.12c6a5e2.png"
+        class="img-icon"
+        (click)="menuSwitch(1)">
+      <img [ngClass]="{'img-selected': iconSelected === 2}"
+        src="../../../assets/images/Devil.398d12d3.png"
+        class="img-icon"
+        (click)="menuSwitch(2)">
+      <img [ngClass]="{'img-selected': iconSelected === 3}"
+        src="../../../assets/images/Wanted.58885dff.png"
+        class="img-icon"
+        (click)="menuSwitch(3)">
+      <img [ngClass]="{'img-selected': iconSelected === 4}"
+        src="../../../assets/images/Laugh.91116a28.png"
+        class="img-icon"
+        (click)="menuSwitch(4)">
+    </div>
+  </div>
+
+  <div class="info-box">
+
+    <div class="individual-icon">
+      <img src="../../../assets/images/estats.png" class="info-icons">
+    </div>
+    <div class="individual-icon streak-icon">
+      <img src="../../../assets/images/StreakNone.d3094bad.png" class="info-icons info-streak">
+      <p>{{streakNumber}}</p>
+    </div>
+    <div class="individual-icon">
+      <img src="../../../assets/images/attpng.png" class="info-icons">
+    </div>
+    <div class="individual-icon">
+      <img src="../../../assets/images/help.webp" class="info-icons">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,125 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  overflow: hidden;
+  /* height: 215px; */
+}
+
+.logo{
+  width: 300px;
+  height: 93.35px;
+  align-self: center;
+  transition: transform 0.5s ease;
+}
+
+.logo:hover{
+  transform: scale(1.1);
+}
+
+.box{
+  display: flex;
+  flex-direction: row;
+  margin-top: 45px;
+  align-items: center;
+  background-image: url(../../../assets/images/Rope.e3cc56cf.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 26px;
+  width: 363px;
+
+}
+
+.img-icon{
+  height: 80px;
+  width: 80.4px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  filter: grayscale(1);
+}
+
+.img-selected{
+  filter: drop-shadow(0 0 10px #faf9f3);
+}
+
+
+.img-icon:hover{
+  transform: scale(1.1) ;
+}
+
+
+.icon-box{
+  display: flex;
+  flex-direction: row;
+  gap: 10.6px;
+  margin-left: 4px;
+}
+
+.info-box{
+  display: flex;
+  flex-direction: row;
+  background-image: url(../../../assets/images/info-box-back.png);
+  background-size: 100% 100%;
+  padding: 5px 15px 5px 15px;
+  margin-top: 50px;
+  width: 179px;
+  gap: 16px;
+  border: 3px solid #534e41;
+  border-radius: 10px;
+}
+
+.info-icons{
+  height: 30px;
+  width: 30px;
+  opacity: 0.7;
+  filter: brightness(0);
+  cursor: pointer
+}
+
+.info-icons:hover{
+  opacity: 0.9;
+}
+
+
+.info-streak{
+  height: 40px;
+  width: 40px;
+  filter: brightness(0.9);
+}
+
+.info-streak:hover{
+  opacity: 0.7;
+}
+
+.individual-icon{
+  display: flex;
+  width: 25%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.streak-icon{
+  position: relative;
+
+}
+
+.streak-icon img{
+  position: absolute;
+  top: -9.4px;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 9px;
+  left: 15px;
+}
+
+

@@ -1,0 +1,8 @@
+div{
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  height: 750px;
+  border-radius: 18px;
+  padding: 10px;
+}
