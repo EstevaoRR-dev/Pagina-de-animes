@@ -11,4 +11,6 @@ import { Component } from '@angular/core';
 export class InfoBoxComponent {
    numero = 1;
 
+   numero2 = 'vinte e sete';
+
 }
