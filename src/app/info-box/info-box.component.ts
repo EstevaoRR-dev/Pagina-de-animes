@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './info-box.component.html',
   styleUrl: './info-box.component.css'
 })
+
 export class InfoBoxComponent {
+   numero = 1;
 
 }
