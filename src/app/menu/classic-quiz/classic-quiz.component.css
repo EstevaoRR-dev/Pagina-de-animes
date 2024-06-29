@@ -1,4 +1,4 @@
-.content-box{
+/* .content-box{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,21 +9,6 @@
   border: 3px solid #534e41;
   width: 45%;
   border-radius: 10px;
-}
-
-h2{
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 20px;
-  color: #534E41;
-
-}
-
-p{
-  color: #979797;
-  font-size: 19px;
-  text-align: center;
-  font-weight: bolder;
 }
 
 .box05{
@@ -40,42 +25,29 @@ p{
   border-radius: 4px;
   width: 100%;
   background-color: #FAF9F3;
-}
-
-/* .box2{
-  display: flex;
-  flex-direction: row;
-  margin-top: 50px;
-  width: 45%;
-  background-color: #FAF9F3;
-  border: thick double #534e41;
-  border-radius: 10px;
-  justify-content: space-between;
-  padding: 8px 0px 8px 0px;
-}
-
-.input-text{
-  width: 85%;
-  margin-left: 5px;
-  border: 2px solid #979797;
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 18px;
-  color: #534E41;
-}
-
-.input-text::placeholder{
-  color: #979797;
-}
-
-.paper-plane{
-  width: 10%;
-  cursor: pointer;
-}
-
-.paper-plane:hover{
-  transform: scale(1.2);
 } */
+
+.content-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+h2{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #534E41;
+
+}
+
+p{
+  color: #979797;
+  font-size: 19px;
+  text-align: center;
+  font-weight: bolder;
+}
 
 .autocomplete-chars{
   width: 45%;
@@ -95,3 +67,41 @@ span{
 .yesterDay-char{
   color: red;
 }
+
+.tips-box{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 3px;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.tips-content{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.373);
+  border-radius: 10px;
+  width: 84px;
+  height: 82px;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tips-content img{
+  height: 30px;
+  width: 30px;
+  margin-bottom: 13px;
+  filter: brightness(0.5);
+}
+
+.tips-content p{
+  font-size: 9.5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #979797;
+  margin: 0 0 0 2px;
+
+}
+

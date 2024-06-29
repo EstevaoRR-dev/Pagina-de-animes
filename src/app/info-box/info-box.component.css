@@ -1,5 +1,33 @@
-.box{
-  width: 30%;
-  height: 400px;
-  background-color: red;
+.content-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.box0{
+  border: 3px solid #534e41;
+  width: 45%;
+  border-radius: 10px;
+}
+
+.box05{
+  border: 5px solid #eadfc2;
+  padding-right: 3px;
+  border-radius: 10px;
+}
+
+.box1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #534e41;
+  border-radius: 4px;
+  width: 100%;
+  background-color: #FAF9F3;
+}
+
+h2{
+  text-align: center;
+  font-size: 17.6px;
 }

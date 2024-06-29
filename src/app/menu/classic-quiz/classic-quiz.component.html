@@ -1,19 +1,47 @@
-<div class="content-box">
+<!-- <div class="content-box">
   <div class="box0">
     <div class="box05">
       <div class="box1">
         <h2>Adivinha qual é a personagem de One Piece de hoje!</h2>
-        <p>Escreve um carácter qualquer para começar.</p>
+
       </div>
     </div>
   </div>
 
 
   <app-complete-chars class="autocomplete-chars"/>
-  <!-- <div class="box2">
-    <input type="text" class="input-text" placeholder="Nome da personagem, pseudónimo" >
-    <input type="image" src="../../../assets/images/paper-plane.png" class="paper-plane">
-  </div> -->
+
+  <div class="box3">
+    <span>O carácter de ontem foi <span class="yesterDay-char">{{yesterDay}}</span></span>
+  </div>
+</div> -->
+
+<app-info-box [headerSection]="headerSection">
+
+  @if (gameStart) {
+    <div class="tips-box">
+      <div class="tips-content" title="Primeira aparição do personagem">
+        <img src="../../../assets/images/tip1.png" class="img-tips">
+        <p>Primeira pista de aparição</p>
+        <p>Em {{atemptsCount}} tentativas</p>
+      </div>
+      <div class="tips-content" title="Se possuir, o tipo de fruto do personagem">
+        <img src="../../../assets/images/tip2.png" class="img-tips">
+        <p>Primeira pista de aparição</p>
+        <p>Em {{atemptsCount}} tentativas</p>
+      </div>
+    </div>
+  }
+  @else {
+    <p style="font-size: 17.6px;">Escreve um carácter qualquer para começar.</p>
+  }
+
+</app-info-box>
+<div class="content-box">
+
+  <app-complete-chars class="autocomplete-chars" (charChoosen)="gameStart = true;
+   atemptsCount = atemptsCount -1"/>
+
   <div class="box3">
     <span>O carácter de ontem foi <span class="yesterDay-char">{{yesterDay}}</span></span>
   </div>

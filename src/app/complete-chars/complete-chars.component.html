@@ -1,7 +1,7 @@
 <div class="box2" [ngClass]="{'box2-onFocus': isInputFocus && filteredList.length > 0}">
   <input type="text" class="input-text" placeholder="Nome da personagem, pseudónimo" (focus)="onFocus()"
     (blur)="isInputFocus = true" (input)="filterList()" [(ngModel)]="inputChar">
-  <input type="image" src="../../../assets/images/paper-plane.png" class="paper-plane">
+  <input type="image" src="../../../assets/images/paper-plane.png" class="paper-plane" (click)="charSelected()">
 </div>
 @if (isInputFocus && filteredList.length > 0) {
 <div class="autocomplete" #targetElement>

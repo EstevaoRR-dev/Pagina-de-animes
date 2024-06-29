@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-info-box',
@@ -9,8 +9,7 @@ import { Component } from '@angular/core';
 })
 
 export class InfoBoxComponent {
-   numero = 1;
 
-   numero2 = 'vinte e sete';
+  @Input({required: true}) headerSection!: string;
 
 }

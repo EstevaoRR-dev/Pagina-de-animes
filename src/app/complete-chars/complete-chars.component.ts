@@ -1,5 +1,5 @@
 import { personagens } from './../personagens';
-import { AfterViewInit, Component, ElementRef, OnDestroy, OnInit, ViewChild} from '@angular/core';
+import { AfterViewInit, Component, ElementRef, EventEmitter, OnDestroy, OnInit, Output, ViewChild} from '@angular/core';
 import { NgStyle, NgClass } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -17,6 +17,7 @@ export class CompleteCharsComponent{
 
   listOfChars = personagens;
   filteredList: {path:string, name:string}[] = [];
+  @Output() charChoosen = new EventEmitter<String>();
 
   filterList(){
     const searchItem = this.inputChar.toLowerCase();
@@ -46,6 +47,11 @@ export class CompleteCharsComponent{
 
   onScroll(){
     console.log('eai');
+  }
+
+  charSelected():void{
+    this.charChoosen.emit(this.inputChar);
+    this.inputChar = '';
   }
 
 
