@@ -1,3 +1,26 @@
+<app-info-box [headerSection]="headerFruit">
+
+  <h3>❝ Hira Hira no Mi ❞</h3>
+
+  <div class="tips-box">
+    <div class="tips-content" title="O tipo de Fruta">
+      <img src="../../../assets/images/tip3.png" class="img-tips">
+      <p>primeira pista</p>
+      <p>Em {{tip1Count}} tentativas</p>
+    </div>
+    <div class="tips-content" title="Tradução do nome da fruta">
+      <img src="../../../assets/images/tip4.png" class="img-tips">
+      <p>Tradução</p>
+      <p>Em {{tip2Count}} tentativas</p>
+    </div>
+    <div class="tips-content" title="O que a fruta faz">
+      <img src="../../../assets/images/tip5.png" class="img-tips">
+      <p>O que faz</p>
+      <p>Em {{tip2Count}} tentativas</p>
+    </div>
+  </div>
+</app-info-box>
+
 <div class="content-box">
-  <h2>Funfou Fruit</h2>
+  <app-complete-chars class="autocomplete-box" />
 </div>

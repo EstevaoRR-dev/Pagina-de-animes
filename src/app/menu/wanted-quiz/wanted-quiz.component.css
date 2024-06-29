@@ -2,4 +2,52 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
+}
+
+.wanted-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 352.71px;
+  width: 303.84px;
+  background-image: url('../../../assets/images/wantedBg.png');
+  margin-bottom: 38px;
+}
+
+.wanted-box__header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wanted-box__header h3{
+  font-size: 56px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+
+}
+
+.wanted-box__img-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 29px;
+}
+
+.wanted-box__img-box img{
+  width: 243px;
+  height: 136px;
+}
+
+.wanted-box__bottom{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wanted-box__bottom h3{
+  font-size: 32px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
