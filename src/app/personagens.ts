@@ -1,7 +1,13 @@
 export const personagens = [
   {
     name: 'Arlong',
-    path: 'Arlong.png'
+    path: 'Arlong.png',
+    genero: 'homem',
+    filiacao: 'Exército Revolucionario',
+    akumaNoMi: 'Paramecia',
+    haki: ['armamento'],
+    ultimaRecompensa: '296 mi',
+    primeiroArco: 'Jaya'
   },{
     name: 'Bartholomew Kuma',
     path: 'BartholomewKuma.png'
