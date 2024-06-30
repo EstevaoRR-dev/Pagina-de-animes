@@ -52,3 +52,48 @@ h3{
   position: absolute;
   left: 312px;
 }
+
+/* Estilos para o tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Estilos para o texto do tooltip */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 190px;
+  background-color: #FAF9F3;
+  color: #534e41;
+  font-weight: 600;
+  border: 3px solid #534e41;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  top: 106%;
+  left: 30%;
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Estilos para a setinha */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 111%; 
+  left: 50%;
+  margin-left: -5px;
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent #534e41 transparent; 
+}
+
+/* Exibe o tooltip quando o mouse passa por cima */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
