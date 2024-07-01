@@ -27,6 +27,22 @@
   background-color: #FAF9F3;
 } */
 
+.answer-titles{
+  width: 648px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titles{
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 8px;
+}
+
 .content-box{
   display: flex;
   flex-direction: column;
