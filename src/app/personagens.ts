@@ -3,11 +3,13 @@ export const personagens = [
     name: 'Arlong',
     path: 'Arlong.png',
     genero: 'homem',
-    filiacao: 'Exército Revolucionario',
-    akumaNoMi: 'Paramecia',
-    haki: ['armamento'],
-    ultimaRecompensa: '296 mi',
-    primeiroArco: 'Jaya'
+    filiacao: 'Piratas Arlong',
+    akumaNoMi: '',
+    haki: [''],
+    ultimaRecompensa: '20 mi',
+    altura:'2m63',
+    origem: 'Grand Line',
+    primeiroArco: 'East Blue'
   },
   {
     name: 'Bartholomew Kuma',
@@ -17,6 +19,8 @@ export const personagens = [
     akumaNoMi: 'Nikyu Nikyu no Mi (Paramecia)',
     haki: [],
     ultimaRecompensa: '296 mi',
+    altura: '6m89',
+    origem: 'South Blue',
     primeiroArco: 'Thriller Bark'
   },
   {
@@ -27,6 +31,8 @@ export const personagens = [
     akumaNoMi: '',
     haki: [],
     ultimaRecompensa: '',
+    altura: '1m86',
+    origem: 'East Blue',
     primeiroArco: 'Arlong Park'
   },
   {
@@ -37,6 +43,8 @@ export const personagens = [
     akumaNoMi: 'Mane Mane no Mi (Paramecia)',
     haki: [],
     ultimaRecompensa: '32 mi',
+    altura: '2m38',
+    origem: 'South Blue',
     primeiroArco: 'Little Garden'
   },
   {
@@ -47,6 +55,8 @@ export const personagens = [
     akumaNoMi: 'Mero Mero no Mi (Paramecia)',
     haki: ['armamento', 'observação', 'rei'],
     ultimaRecompensa: '80 mi',
+    altura: '1m91',
+    origem: 'Amazon Lily',
     primeiroArco: 'Amazon Lily'
   },
   {
@@ -57,6 +67,8 @@ export const personagens = [
     akumaNoMi: 'Pika Pika no Mi (Logia)',
     haki: ['armamento', 'observação'],
     ultimaRecompensa: '',
+    altura: '3m02',
+    origem: 'North Blue',
     primeiroArco: 'Sabaody Archipelago'
   },
   {
@@ -67,6 +79,8 @@ export const personagens = [
     akumaNoMi: '',
     haki: [],
     ultimaRecompensa: '',
+    altura: '22m00',
+    origem: 'Elbaf',
     primeiroArco: 'Little Garden'
   },
   {
@@ -77,6 +91,8 @@ export const personagens = [
     akumaNoMi: 'Yomi Yomi no Mi (Paramecia)',
     haki: [],
     ultimaRecompensa: '83 mi',
+    altura: '2m66',
+    origem: 'West Blue',
     primeiroArco: 'Thriller Bark'
   },
   {
@@ -87,6 +103,8 @@ export const personagens = [
     akumaNoMi: 'Bara Bara no Mi (Paramecia)',
     haki: [],
     ultimaRecompensa: '15 mi',
+    altura: '1m92',
+    origem: 'East Blue',
     primeiroArco: 'Orange Town'
   },
   {
@@ -97,6 +115,8 @@ export const personagens = [
     akumaNoMi: '',
     haki: [],
     ultimaRecompensa: '',
+    altura: '1m61',
+    origem: 'Zou',
     primeiroArco: 'Zou'
   },
   {
@@ -107,6 +127,8 @@ export const personagens = [
     akumaNoMi: 'Mochi Mochi no Mi (Paramecia)',
     haki: ['armamento', 'observação', 'rei'],
     ultimaRecompensa: '1,057 bi',
+    altura: '5m09',
+    origem: 'Totto Land',
     primeiroArco: 'Whole Cake Island'
   },
   {
@@ -117,6 +139,8 @@ export const personagens = [
     akumaNoMi: 'Soru Soru no Mi (Paramecia)',
     haki: ['armamento', 'observação', 'rei'],
     ultimaRecompensa: '4,388 bi',
+    altura: '8m80',
+    origem: 'Elbaf',
     primeiroArco: 'Whole Cake Island'
   },
   {
@@ -127,6 +151,8 @@ export const personagens = [
     akumaNoMi: 'Memo Memo no Mi (Paramecia)',
     haki: [],
     ultimaRecompensa: '',
+    altura: '1m66',
+    origem: 'Totto Land',
     primeiroArco: 'Whole Cake Island'
   },
   {
@@ -137,6 +163,8 @@ export const personagens = [
     akumaNoMi: 'Suna Suna no Mi (Logia)',
     haki: [],
     ultimaRecompensa: '81 mi',
+    altura: '2m53',
+    origem: 'Grand Line',
     primeiroArco: 'Alabasta'
   },
   {
@@ -147,6 +175,8 @@ export const personagens = [
     akumaNoMi: '',
     haki: [],
     ultimaRecompensa: '17 mi',
+    altura: '2m63',
+    origem: 'East Blue',
     primeiroArco: 'Baratie'
   },
   {
@@ -157,6 +187,8 @@ export const personagens = [
     akumaNoMi: 'Ito Ito no Mi (Paramecia)',
     haki: ['armamento', 'observação', 'rei'],
     ultimaRecompensa: '340 mi',
+    altura: '3m05',
+    origem: 'North Blue',
     primeiroArco: 'Dressrosa'
   },
   {
@@ -167,6 +199,8 @@ export const personagens = [
     akumaNoMi: 'Nagi Nagi no Mi (Paramecia)',
     haki: [],
     ultimaRecompensa: '',
+    altura: '2m98',
+    origem: 'North Blue',
     primeiroArco: 'Dressrosa'
   },
   {
@@ -177,6 +211,8 @@ export const personagens = [
     akumaNoMi: '',
     haki: [],
     ultimaRecompensa: '',
+    altura: '21m00',
+    origem: 'Elbaf',
     primeiroArco: 'Little Garden'
   },
   {
@@ -187,6 +223,8 @@ export const personagens = [
     akumaNoMi: '',
     haki: ['armamento', 'observação'],
     ultimaRecompensa: '',
+    altura: '1m98',
+    origem: 'Grand Line',
     primeiroArco: 'Baratie'
   },
   {
@@ -197,6 +235,8 @@ export const personagens = [
     akumaNoMi: 'Gura Gura no Mi (Paramecia)',
     haki: ['armamento', 'observação', 'rei'],
     ultimaRecompensa: '5,046 bi',
+    altura: '6m66',
+    origem: 'Grand Line',
     primeiroArco: 'Marineford'
   },
   {
@@ -207,16 +247,20 @@ export const personagens = [
     akumaNoMi: 'Goro Goro no Mi (Logia)',
     haki: ['observação'],
     ultimaRecompensa: '',
+    altura: '2m66',
+    origem: 'Birka',
     primeiroArco: 'Skypiea'
   },
   {
     name: 'Eustass Kid',
     path: 'EustassKid.png',
     genero: 'homem',
-    filiacao: 'Piratas do Kid',
-    akumaNoMi: 'Jiki Jiki no Mi (Paramecia)',
-    haki: ['armamento', 'observação'],
+    filiacao: 'Kid Pirates',
+    akumaNoMi: '',
+    haki: ['armamento', 'observação', 'rei'],
     ultimaRecompensa: '470 mi',
+    altura: '2m05',
+    origem: 'South Blue',
     primeiroArco: 'Sabaody Archipelago'
   },
   {
@@ -227,6 +271,8 @@ export const personagens = [
     akumaNoMi: '',
     haki: [],
     ultimaRecompensa: '94 mi',
+    altura: '2m40',
+    origem: 'South Blue',
     primeiroArco: 'Water 7'
   },
   {
@@ -240,43 +286,51 @@ export const personagens = [
     primeiroArco: 'Baratie'
   },
   {
-    name: 'Gol D Roger',
+    name: 'Gol D. Roger',
     path: 'GolDRoger.png',
     genero: 'homem',
-    filiacao: 'Piratas do Roger',
+    filiacao: 'Roger Pirates',
     akumaNoMi: '',
     haki: ['armamento', 'observação', 'rei'],
     ultimaRecompensa: '5,564 bi',
+    altura: '2m74',
+    origem: 'East Blue',
     primeiroArco: 'Loguetown'
   },
   {
     name: 'Jewelry Bonney',
     path: 'JewelryBonney.png',
     genero: 'mulher',
-    filiacao: 'Piratas da Bonney',
+    filiacao: 'Bonney Pirates',
     akumaNoMi: '',
     haki: [],
     ultimaRecompensa: '140 mi',
+    altura: '1m74',
+    origem: 'South Blue',
     primeiroArco: 'Sabaody Archipelago'
   },
   {
-    name: 'Jinbe',
+  name: 'Jinbe',
     path: 'Jinbe.png',
     genero: 'homem',
     filiacao: 'Piratas do Chapéu de Palha',
     akumaNoMi: '',
     haki: ['armamento', 'observação'],
     ultimaRecompensa: '438 mi',
+    altura: '3m01',
+    origem: 'Fishman Island',
     primeiroArco: 'Arlong Park'
   },
   {
     name: 'Kaido',
     path: 'Kaido.png',
     genero: 'homem',
-    filiacao: 'Piratas das Feras',
-    akumaNoMi: 'Uo Uo no Mi, Modelo: Seiryu (Zoan)',
+    filiacao: 'Beasts Pirates',
+    akumaNoMi: 'Uo Uo no Mi, Model: Seiryu (Zoan)',
     haki: ['armamento', 'observação', 'rei'],
     ultimaRecompensa: '4,611 bi',
+    altura: '7m10',
+    origem: 'Grand Line',
     primeiroArco: 'Wano'
   },
   {
@@ -287,6 +341,8 @@ export const personagens = [
     akumaNoMi: '',
     haki: ['armamento'],
     ultimaRecompensa: '',
+    altura: '2m87',
+    origem: 'Wano',
     primeiroArco: 'Wano'
   },
   {
@@ -297,6 +353,8 @@ export const personagens = [
     akumaNoMi: 'Fuku Fuku no Mi (Paramecia)',
     haki: ['armamento'],
     ultimaRecompensa: '',
+    altura: '2m77',
+    origem: 'Wano',
     primeiroArco: 'Punk Hazard'
   },
   {
@@ -307,6 +365,8 @@ export const personagens = [
     akumaNoMi: '',
     haki: [],
     ultimaRecompensa: '',
+    altura: '1m70',
+    origem: 'Grand Line',
     primeiroArco: 'Drum Island'
   },
   {
@@ -317,46 +377,56 @@ export const personagens = [
     akumaNoMi: 'Hie Hie no Mi (Logia)',
     haki: ['armamento', 'observação'],
     ultimaRecompensa: '',
+    altura: '2m98',
+    origem: 'South Blue',
     primeiroArco: 'Long Ring Long Land'
   },
   {
-    name: 'Marshall D Teach',
+    name: 'Marshall D. Teach',
     path: 'MarshallDTeach.png',
     genero: 'homem',
     filiacao: 'Piratas do Barba Negra',
     akumaNoMi: 'Yami Yami no Mi (Logia), Gura Gura no Mi (Paramecia)',
     haki: ['armamento', 'observação'],
     ultimaRecompensa: '2,247 bi',
+    altura: '3m44',
+    origem: 'South Blue',
     primeiroArco: 'Jaya'
   },
   {
-    name: 'Monkey D Dragon',
+    name: 'Monkey D. Dragon',
     path: 'MonkeyDDragon.png',
     genero: 'homem',
-    filiacao: 'Exército Revolucionário',
+    filiacao: 'Revolutionary Army',
     akumaNoMi: '',
     haki: ['armamento', 'observação', 'rei'],
     ultimaRecompensa: '',
+    altura: '2m66',
+    origem: 'East Blue',
     primeiroArco: 'Loguetown'
   },
   {
-    name: 'Monkey D Garp',
+    name: 'Monkey D. Garp',
     path: 'MonkeyDGarp.png',
     genero: 'homem',
     filiacao: 'Marinha',
     akumaNoMi: '',
     haki: ['armamento', 'observação'],
     ultimaRecompensa: '',
+    altura: '2m87',
+    origem: 'East Blue',
     primeiroArco: 'Water 7'
   },
   {
-    name: 'Monkey D Luffy',
+    name: 'Monkey D. Luffy',
     path: 'MonkeyDLuffy.png',
     genero: 'homem',
     filiacao: 'Piratas do Chapéu de Palha',
     akumaNoMi: 'Gomu Gomu no Mi (Paramecia)',
     haki: ['armamento', 'observação', 'rei'],
-    ultimaRecompensa: '1,5 bi',
+    ultimaRecompensa: '1,500 bi',
+    altura: '1m74',
+    origem: 'East Blue',
     primeiroArco: 'Romance Dawn'
   },
   {
@@ -367,7 +437,9 @@ export const personagens = [
     akumaNoMi: '',
     haki: [],
     ultimaRecompensa: '66 mi',
-    primeiroArco: 'Romance Dawn'
+    altura: '1m70',
+    origem: 'East Blue',
+    primeiroArco: 'Orange Town'
   },
   {
     name: 'Nico Robin',
@@ -377,26 +449,32 @@ export const personagens = [
     akumaNoMi: 'Hana Hana no Mi (Paramecia)',
     haki: [],
     ultimaRecompensa: '130 mi',
-    primeiroArco: 'Alabasta'
+    altura: '1m88',
+    origem: 'West Blue',
+    primeiroArco: 'Whiskey Peak'
   },
   {
-    name: 'Portgas D Ace',
+    name: 'Portgas D. Ace',
     path: 'PortgasDAce.png',
     genero: 'homem',
     filiacao: 'Piratas do Barba Branca',
     akumaNoMi: 'Mera Mera no Mi (Logia)',
-    haki: ['armamento', 'observação', 'rei'],
+    haki: ['armamento', 'observação'],
     ultimaRecompensa: '550 mi',
-    primeiroArco: 'Alabasta'
+    altura: '1m85',
+    origem: 'East Blue',
+    primeiroArco: 'Drum Island'
   },
   {
     name: 'Rob Lucci',
     path: 'RobLucci.png',
     genero: 'homem',
-    filiacao: 'CP0',
-    akumaNoMi: 'Neko Neko no Mi, Modelo: Leopardo (Zoan)',
+    filiacao: 'CP9',
+    akumaNoMi: 'Neko Neko no Mi, Model: Leopard (Zoan)',
     haki: ['armamento', 'observação'],
     ultimaRecompensa: '',
+    altura: '2m12',
+    origem: 'North Blue',
     primeiroArco: 'Water 7'
   },
   {
@@ -405,19 +483,23 @@ export const personagens = [
     genero: 'homem',
     filiacao: 'Piratas do Chapéu de Palha',
     akumaNoMi: '',
-    haki: ['armamento', 'observação'],
+    haki: ['armamento', 'observação', 'rei'],
     ultimaRecompensa: '320 mi',
+    altura: '1m81',
+    origem: 'East Blue',
     primeiroArco: 'Romance Dawn'
   },
   {
     name: 'Sabo',
     path: 'Sabo.png',
     genero: 'homem',
-    filiacao: 'Exército Revolucionário',
+    filiacao: 'Revolutionary Army',
     akumaNoMi: 'Mera Mera no Mi (Logia)',
     haki: ['armamento', 'observação'],
-    ultimaRecompensa: '',
-    primeiroArco: 'Dressrosa'
+    ultimaRecompensa: '602 mi',
+    altura: '1m87',
+    origem: 'East Blue',
+    primeiroArco: 'Post-Enies Lobby'
   },
   {
     name: 'Sakazuki',
@@ -427,7 +509,9 @@ export const personagens = [
     akumaNoMi: 'Magu Magu no Mi (Logia)',
     haki: ['armamento', 'observação'],
     ultimaRecompensa: '',
-    primeiroArco: 'Marineford'
+    altura: '3m06',
+    origem: 'North Blue',
+    primeiroArco: 'Post-Enies Lobby'
   },
   {
     name: 'Sengoku',
@@ -437,9 +521,11 @@ export const personagens = [
     akumaNoMi: 'Hito Hito no Mi, Modelo: Daibutsu (Zoan)',
     haki: ['armamento', 'observação'],
     ultimaRecompensa: '',
+    altura: '2m78',
+    origem: 'North Blue',
     primeiroArco: 'Marineford'
   },
-  {
+{
     name: 'Shimotsuki Ryuma',
     path: 'ShimotsukiRyuma.png',
     genero: 'homem',
@@ -447,6 +533,8 @@ export const personagens = [
     akumaNoMi: '',
     haki: [],
     ultimaRecompensa: '',
+    altura: '1m79',
+    origem: 'Wano',
     primeiroArco: 'Thriller Bark'
   },
   {
@@ -457,6 +545,8 @@ export const personagens = [
     akumaNoMi: '',
     haki: ['armamento', 'observação', 'rei'],
     ultimaRecompensa: '',
+    altura: '1m88',
+    origem: 'Grand Line',
     primeiroArco: 'Sabaody Archipelago'
   },
   {
@@ -467,16 +557,20 @@ export const personagens = [
     akumaNoMi: 'Hito Hito no Mi (Zoan)',
     haki: [],
     ultimaRecompensa: '100',
+    altura: '0m90',
+    origem: 'Grand Line',
     primeiroArco: 'Drum Island'
   },
   {
-    name: 'Trafalgar D Water Law',
+    name: 'Trafalgar D. Water Law',
     path: 'TrafalgarDWaterLaw.png',
     genero: 'homem',
     filiacao: 'Piratas do Coração',
     akumaNoMi: 'Ope Ope no Mi (Paramecia)',
     haki: ['armamento', 'observação'],
     ultimaRecompensa: '500 mi',
+    altura: '1m91',
+    origem: 'North Blue',
     primeiroArco: 'Sabaody Archipelago'
   },
   {
@@ -487,6 +581,8 @@ export const personagens = [
     akumaNoMi: '',
     haki: ['observação'],
     ultimaRecompensa: '200 mi',
+    altura: '1m76',
+    origem: 'East Blue',
     primeiroArco: 'Syrup Village'
   },
   {
@@ -497,6 +593,8 @@ export const personagens = [
     akumaNoMi: '',
     haki: ['armamento', 'observação'],
     ultimaRecompensa: '330 mi',
+    altura: '1m80',
+    origem: 'North Blue',
     primeiroArco: 'Baratie'
   },
   {
@@ -507,6 +605,8 @@ export const personagens = [
     akumaNoMi: '',
     haki: [],
     ultimaRecompensa: '',
+    altura: '2m00',
+    origem: 'East Blue',
     primeiroArco: 'Baratie'
   }
 ];

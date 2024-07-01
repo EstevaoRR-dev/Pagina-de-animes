@@ -1,82 +1,83 @@
 <app-info-box [headerSection]="headerSection">
 
   @if (gameStart) {
-    <div class="tips-box">
-      <div class="tips-content" title="Primeira aparição do personagem">
-        <img src="../../../assets/images/tip1.png" class="img-tips">
-        <p>Primeira pista de aparição</p>
-        <p>Em {{atemptsCount}} tentativas</p>
-      </div>
-      <div class="tips-content" title="Se possuir, o tipo de fruto do personagem">
-        <img src="../../../assets/images/tip2.png" class="img-tips">
-        <p>Primeira pista de aparição</p>
-        <p>Em {{atemptsCount}} tentativas</p>
-      </div>
+  <div class="tips-box">
+    <div class="tips-content" title="Primeira aparição do personagem">
+      <img src="../../../assets/images/tip1.png" class="img-tips">
+      <p>Primeira pista de aparição</p>
+      <p>Em {{atemptsCount}} tentativas</p>
     </div>
+    <div class="tips-content" title="Se possuir, o tipo de fruto do personagem">
+      <img src="../../../assets/images/tip2.png" class="img-tips">
+      <p>Primeira pista de aparição</p>
+      <p>Em {{atemptsCount}} tentativas</p>
+    </div>
+  </div>
   }
   @else {
-    <p style="font-size: 17.6px;">Escreve um carácter qualquer para começar.</p>
+  <p style="font-size: 17.6px;">Escreve um carácter qualquer para começar.</p>
   }
 
 </app-info-box>
 <div class="content-box">
 
   <app-complete-chars class="autocomplete-chars" (charChoosen)="gameStart = true;
-   atemptsCount = atemptsCount -1"/>
+   atemptsCount = atemptsCount -1" />
+
+    <div class="answer-titles">
+      <span class="titles">Carácter</span>
+      <span class="titles">Gênero</span>
+      <span class="titles">Filiação</span>
+      <span class="titles">Akuma no mi</span>
+      <span class="titles">Haki</span>
+      <span class="titles">Última recompensa</span>
+      <span class="titles">Altura</span>
+      <span class="titles">Origem</span>
+      <span class="titles">Primeiro arco</span>
+    </div>
+
+      <div class="awnser-box">
+        <div class="awnser-box__caracter">
+          <img src="{{ '../../../assets/images/' + choosenCharacter.path}}">
+        </div>
+        <div class="awnser-box__genero">
+          <span>{{choosenCharacter.genero}}</span>
+        </div>
+        <div class="awnser-box__filiacao">
+          <span>{{choosenCharacter.filiacao}}</span>
+        </div>
+        <div class="awnser-box__akuma">
+          <span>{{choosenCharacter.akumaNoMi}}</span>
+        </div>
+        <div class="awnser-bos__haki">
+          @if (choosenCharacter.haki.length === 0) {
+          <span>Nenhum</span>
+          }
+          @if (choosenCharacter.haki.includes('rei')) {
+          <img src="../../../assets/images/haki-king.png">
+          }
+          @if (choosenCharacter.haki.includes('armamento')) {
+          <img src="../../../assets/images/haki-army.png">
+          }
+          @if (choosenCharacter.haki.includes('observação')) {
+          <img src="../../../assets/images/haki-eyes.png">
+          }
+
+        </div>
+        <div class="awnser-box__wanted">
+          <span>{{choosenCharacter.ultimaRecompensa}}</span>
+        </div>
+        <div class="answer-box__height">
+          <span>{{choosenCharacter.altura}}</span>
+        </div>
+        <div class="answer-box__height">
+          <span>{{choosenCharacter.altura}}</span>
+        </div>
+        <div class="awnser-box__arc">
+          <span>{{choosenCharacter.primeiroArco}}</span>
+        </div>
+      </div>
 
   <div class="box3">
     <span>O carácter de ontem foi <span class="yesterDay-char">{{yesterDay}}</span></span>
   </div>
-
-<<<<<<< HEAD
-  <div class="answer-titles">
-    <span class="titles">Carácter</span>
-    <span class="titles">Gênero</span>
-    <span class="titles">Filiação</span>
-    <span class="titles">Akuma no mi</span>
-    <span class="titles">Haki</span>
-    <span class="titles">Última recompensa</span>
-    <span class="titles">Altura</span>
-    <span class="titles">Origem</span>
-    <span class="titles">Primeiro arco</span>
-=======
-
-
-  <div class="awnser-box">
-    <div class="awnser-box__caracter">
-      <img src="{{ '../../../assets/images/' + choosenCharacter.path}}">
-    </div>
-    <div class="awnser-box__genero">
-      <span>{{choosenCharacter.genero}}</span>
-    </div>
-    <div class="awnser-box__filiacao">
-      <span>{{choosenCharacter.filiacao}}</span>
-    </div>
-    <div class="awnser-box__akuma">
-      <span>{{choosenCharacter.akumaNoMi}}</span>
-    </div>
-    <div class="awnser-bos__haki">
-      @if (choosenCharacter.haki.length === 0) {
-        <span>Nenhum</span>
-      }
-      @if (choosenCharacter.haki.includes('rei')) {
-        <img src="../../../assets/images/haki-king.png">
-      }
-      @if (choosenCharacter.haki.includes('armamento')) {
-        <img src="../../../assets/images/haki-army.png">
-      }
-      @if (choosenCharacter.haki.includes('observação')) {
-        <img src="../../../assets/images/haki-eyes.png">
-      }
-
-    </div>
-    <div class="awnser-box__wanted">
-      <span>{{choosenCharacter.ultimaRecompensa}}</span>
-    </div>
-    <div class="awnser-box__arc">
-      <span>{{choosenCharacter.primeiroArco}}</span>
-    </div>
-
->>>>>>> 838ba3b29fdc8a22af04e5a92ae88e478ea8654f
-  </div>
-</div>
