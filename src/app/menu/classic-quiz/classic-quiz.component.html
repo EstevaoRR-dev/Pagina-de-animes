@@ -27,4 +27,43 @@
   <div class="box3">
     <span>O carácter de ontem foi <span class="yesterDay-char">{{yesterDay}}</span></span>
   </div>
+
+
+
+  <div class="awnser-box">
+    <div class="awnser-box__caracter">
+      <img src="{{ '../../../assets/images/' + choosenCharacter.path}}">
+    </div>
+    <div class="awnser-box__genero">
+      <span>{{choosenCharacter.genero}}</span>
+    </div>
+    <div class="awnser-box__filiacao">
+      <span>{{choosenCharacter.filiacao}}</span>
+    </div>
+    <div class="awnser-box__akuma">
+      <span>{{choosenCharacter.akumaNoMi}}</span>
+    </div>
+    <div class="awnser-bos__haki">
+      @if (choosenCharacter.haki.length === 0) {
+        <span>Nenhum</span>
+      }
+      @if (choosenCharacter.haki.includes('rei')) {
+        <img src="../../../assets/images/haki-king.png">
+      }
+      @if (choosenCharacter.haki.includes('armamento')) {
+        <img src="../../../assets/images/haki-army.png">
+      }
+      @if (choosenCharacter.haki.includes('observação')) {
+        <img src="../../../assets/images/haki-eyes.png">
+      }
+
+    </div>
+    <div class="awnser-box__wanted">
+      <span>{{choosenCharacter.ultimaRecompensa}}</span>
+    </div>
+    <div class="awnser-box__arc">
+      <span>{{choosenCharacter.primeiroArco}}</span>
+    </div>
+
+  </div>
 </div>
