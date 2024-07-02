@@ -11,12 +11,13 @@ import { personagens } from '../../personagens';
   templateUrl: './classic-quiz.component.html',
   styleUrl: './classic-quiz.component.css'
 })
+
 export class ClassicQuizComponent {
   yesterDay = localStorage.getItem('yesterDay');
   headerSection = 'Adivinha qual é a personagem de One Piece de hoje!'
   gameStart = false;
   atemptsCount = 8;
-
+  
   choosenCharacter = personagens[4];
 
   constructor(){
@@ -27,4 +28,17 @@ export class ClassicQuizComponent {
   }
 
 
+  getAkumaType(akuma:String) {
+    const regex = /\(([^)]+)\)/;
+    const match = akuma.match(regex);
+
+    if(match){
+      return match[1];
+    }
+    else{
+      return 'Não Possui'
+    }
+  }
+
 }
+

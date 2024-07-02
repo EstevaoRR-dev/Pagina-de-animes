@@ -39,6 +39,7 @@ export class CompleteCharsComponent{
     this.inputChar = name;
     this.isInputFocus = false;
     this.filteredList = [];
+    this.charSelected();
   }
 
   onFocus() {
