@@ -34,12 +34,23 @@
   align-items: center;
 }
 
-.titles{
+.titles, .titles-wrap{
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 900;
   text-transform: uppercase;
   text-align: center;
-  padding: 15px;
+  padding: 13px;
+  margin-inline: 5px;
+  border-bottom: 3px solid #534E41;
+}
+
+.titles-wrap{
+  padding-top: 0px;
+}
+
+.title-recompensa{
+  font-size: 10px;
+  padding-top: 8px;
 }
 
 .content-box{
