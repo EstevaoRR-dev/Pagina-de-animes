@@ -1,3 +1,19 @@
+<app-info-box [headerSection]="'De qual personagem é esse ataque?'">
+  <div class="scene-box">
+    <div class="gif-box">
+      <img [src]="todayGif.path" [style.filter]="imgBlur" >
+    </div>
+  </div>
+
+  <p>Cada tentativa desfoca um pouco a imagem</p>
+</app-info-box>
+
 <div class="content-box">
-  <h2>Funfou Laugh</h2>
+  <app-complete-chars class="autocomplete" (charChoosen)="charSelected($event)" />
+
+  <div class="box3">
+    <span>O carácter de ontem foi <span class="yesterDay-char">José</span></span>
+  </div>
 </div>
+
+
