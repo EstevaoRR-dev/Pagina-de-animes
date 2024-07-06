@@ -17,6 +17,7 @@ export class LaughQuizComponent {
   imgBlur = 'blur(' + this.blurNumber + 'px) grayscale(1)';
   gifsScenes = gifs;
   todayGif = this.gifsScenes[Math.floor(Math.random() * 8)];
+  filteredListLenght!:number;
 
   charSelected(char:Personagem){
     if(!(char.nome.toLowerCase() === this.todayGif.nome.toLowerCase())){
@@ -28,6 +29,24 @@ export class LaughQuizComponent {
       alert('Você acertou!!!');
       this.blurNumber = 1;
       this.imgBlur = 'none';
+    }
+  }
+
+  bottomBounds():string{
+    if(this.filteredListLenght >= 4){
+      return '-248px';
+    }
+    else if(this.filteredListLenght === 3){
+      return '-186px';
+    }
+    else if(this.filteredListLenght === 2){
+      return '-125px';
+    }
+    else if(this.filteredListLenght === 1){
+      return '-64px';
+    }
+    else{
+      return '';
     }
   }
 

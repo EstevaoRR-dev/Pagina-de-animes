@@ -1,4 +1,5 @@
-<div class="box2" [ngClass]="{'box2-onFocus': isInputFocus && filteredList.length > 0}">
+<div class="box2" [ngClass]="{'box2-onFocus': autocompleteShow}"
+  [style]="!autocomplete2Show ? box2TopBorder() : ''">
   <input type="text" class="input-text" placeholder="Nome da personagem, pseudónimo" (focus)="onFocus()"
     (blur)="isInputFocus = true" (input)="filterList()" [(ngModel)]="inputChar">
   <input type="image" src="../../../assets/images/paper-plane.png" class="paper-plane">
@@ -16,7 +17,7 @@
   </div>
   } -->
 
-  <div class="autocomplete versionOfTop" [hidden]="autocomplete2Show">
+  <div class="autocomplete versionOfTop" [hidden]="autocomplete2Show" [style.top]="bottomBounds">
     <ul>
       @for (item of filteredList; track $index) {
       <li [ngStyle]="{'border-top': $index === 0 ? '5px solid #534E41' : ''}" (click)="getCharOnNameList(item)">

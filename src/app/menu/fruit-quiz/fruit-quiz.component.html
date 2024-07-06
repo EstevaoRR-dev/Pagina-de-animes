@@ -33,6 +33,15 @@
   </div>
 </app-info-box>
 
-<div class="content-box">
-  <app-complete-chars class="autocomplete-box" />
+<div class="column-box">
+
+  <div class="content-box">
+    <app-complete-chars class="autocomplete-box" [bottomBounds]="bottomBounds()" (listLength)="filteredListLenght = $event"/>
+
+  </div>
+
+  <div class="box3">
+    <span>O carácter de ontem foi <span class="yesterDay-char">Juao</span></span>
+  </div>
 </div>
+

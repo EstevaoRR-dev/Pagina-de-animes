@@ -13,5 +13,24 @@ import { CompleteCharsComponent } from '../../complete-chars/complete-chars.comp
 export class WantedQuizComponent {
 
   headerWanted = 'QUE PERSONAGEM APARECE NESTE CARTAZ DE "WANTED"?'
+  filteredListLenght!:number
+
+  bottomBounds():string{
+    if(this.filteredListLenght >= 4){
+      return '566px';
+    }
+    else if(this.filteredListLenght === 3){
+      return '628px';
+    }
+    else if(this.filteredListLenght === 2){
+      return '690px';
+    }
+    else if(this.filteredListLenght === 1){
+      return '750px';
+    }
+    else{
+      return '';
+    }
+  }
 
 }

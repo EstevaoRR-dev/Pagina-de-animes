@@ -1,6 +1,6 @@
 import { Personagem } from './../personagensBck';
 import { personagens } from './../personagens';
-import { AfterViewInit, Component, ElementRef, EventEmitter, Output, ViewChild} from '@angular/core';
+import { AfterViewInit, Component, ElementRef, EventEmitter, Input, Output, ViewChild} from '@angular/core';
 import { NgStyle, NgClass } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -21,6 +21,8 @@ export class CompleteCharsComponent {
   listOfChars:Array<Personagem> = [];
   filteredList: {path:String, nome:String}[] = [];
   @Output() charChoosen = new EventEmitter<Personagem>();
+  @Output() listLength = new EventEmitter<number>();
+  @Input({required: true}) bottomBounds!:string;
 
   @ViewChild('target') target!: ElementRef;
 
@@ -42,7 +44,7 @@ export class CompleteCharsComponent {
       this.filteredList = [];
       this.autocompleteShow = false;
     }
-
+    this.listLength.emit(this.filteredList.length);
   }
 
   onBlur() {
@@ -98,5 +100,9 @@ export class CompleteCharsComponent {
       observer.observe(this.target.nativeElement);
     }
 
+  }
+
+  box2TopBorder():string{
+    return 'border-top-left-radius: 0px;border-top-right-radius: 0px';
   }
 }

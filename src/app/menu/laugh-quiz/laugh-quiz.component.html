@@ -9,7 +9,8 @@
 </app-info-box>
 
 <div class="content-box">
-  <app-complete-chars class="autocomplete" (charChoosen)="charSelected($event)" />
+  <app-complete-chars class="autocomplete" (charChoosen)="charSelected($event)" [bottomBounds]="bottomBounds()"
+    (listLength)="filteredListLenght = $event"/>
 
   <div class="box3">
     <span>O carácter de ontem foi <span class="yesterDay-char">José</span></span>

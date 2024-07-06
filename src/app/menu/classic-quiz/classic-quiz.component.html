@@ -22,7 +22,7 @@
 <div class="content-box">
 
   <app-complete-chars class="autocomplete-chars" (charChoosen)="gameStart = true;
-   atemptsCount = atemptsCount -1; choosenCharacter.push($event)"  />
+   atemptsCount = atemptsCount -1; choosenCharacter.push($event)" [bottomBounds]="'232px'"  />
 
   @if (gameStart) {
 
