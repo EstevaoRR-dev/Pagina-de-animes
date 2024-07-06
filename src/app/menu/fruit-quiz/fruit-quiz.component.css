@@ -48,9 +48,8 @@ h3{
 }
 
 .autocomplete-box{
-  width: 38.7%;
+  width: 400px;
   position: absolute;
-  left: 312px;
 }
 
 /* Estilos para o tooltip */
@@ -84,12 +83,12 @@ h3{
 .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
-  bottom: 111%; 
+  bottom: 111%;
   left: 50%;
   margin-left: -5px;
   border-width: 6px;
   border-style: solid;
-  border-color: transparent transparent #534e41 transparent; 
+  border-color: transparent transparent #534e41 transparent;
 }
 
 /* Exibe o tooltip quando o mouse passa por cima */

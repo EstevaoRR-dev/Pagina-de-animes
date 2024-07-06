@@ -51,3 +51,23 @@
   font-size: 32px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.box3{
+  margin-top: 50px;
+  margin-bottom: 180px;
+}
+
+span{
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.yesterDay-char{
+  color: red;
+}
+
+.autoComplete{
+  width: 400px;
+  position: relative;
+}

@@ -1,6 +1,6 @@
 import { Personagem } from './../personagensBck';
 import { personagens } from './../personagens';
-import { Component, EventEmitter, Output} from '@angular/core';
+import { AfterViewInit, Component, ElementRef, EventEmitter, Output, ViewChild} from '@angular/core';
 import { NgStyle, NgClass } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -11,14 +11,18 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './complete-chars.component.html',
   styleUrl: './complete-chars.component.css'
 })
-export class CompleteCharsComponent{
+export class CompleteCharsComponent {
 
   isInputFocus:boolean = false;
   inputChar= '';
+  autocompleteShow = false;
+  autocomplete2Show = true;
 
   listOfChars:Array<Personagem> = [];
   filteredList: {path:String, nome:String}[] = [];
   @Output() charChoosen = new EventEmitter<Personagem>();
+
+  @ViewChild('target') target!: ElementRef;
 
   constructor(){
     personagens.forEach(item => {
@@ -32,8 +36,11 @@ export class CompleteCharsComponent{
     const searchItem = this.inputChar.toLowerCase();
     this.filteredList = this.listOfChars.filter(item => item.nome.toLowerCase().includes(searchItem));
 
+    this.setupViewIntercepted();
+
     if(this.inputChar === ''){
       this.filteredList = [];
+      this.autocompleteShow = false;
     }
 
   }
@@ -41,7 +48,7 @@ export class CompleteCharsComponent{
   onBlur() {
     setTimeout(() => {
       this.isInputFocus = false;
-    }, 200); // Delay para permitir que o clique nos itens da lista seja registrado
+    }, 200);
   }
 
   optionClicked(char:Personagem){
@@ -68,5 +75,28 @@ export class CompleteCharsComponent{
        result?.haki, result?.ultimaRecompensa, result?.altura, result?.origem, result?.primeiroArco);
       this.optionClicked(trueResult);
     }
+  }
+
+  setupViewIntercepted(){
+    if(this.inputChar != ''){
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if(entry.intersectionRatio === 1){
+            this.autocompleteShow = true;
+            this.autocomplete2Show = true;
+            if(this.inputChar === ''){
+              this.autocompleteShow = false;
+            }
+          }
+          else{
+            this.autocompleteShow = false;
+            this.autocomplete2Show = false;
+          }
+        });
+      }, {threshold: [0,1]})
+
+      observer.observe(this.target.nativeElement);
+    }
+
   }
 }

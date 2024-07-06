@@ -3,8 +3,31 @@
     (blur)="isInputFocus = true" (input)="filterList()" [(ngModel)]="inputChar">
   <input type="image" src="../../../assets/images/paper-plane.png" class="paper-plane">
 </div>
-@if (isInputFocus && filteredList.length > 0) {
-<div class="autocomplete" #targetElement>
+<!-- @if (isInputFocus && filteredList.length > 0) {
+  <div class="autocomplete" >
+    <ul>
+      @for (item of filteredList; track $index) {
+      <li [ngStyle]="{'border-top': $index === 0 ? '5px solid #534E41' : ''}" (click)="getCharOnNameList(item)">
+        <img [src]="'../../assets/images/' + item.path" alt="">
+        <p>{{item.nome}}</p>
+      </li>
+      }
+    </ul>
+  </div>
+  } -->
+
+  <div class="autocomplete versionOfTop" [hidden]="autocomplete2Show">
+    <ul>
+      @for (item of filteredList; track $index) {
+      <li [ngStyle]="{'border-top': $index === 0 ? '5px solid #534E41' : ''}" (click)="getCharOnNameList(item)">
+        <img [src]="'../../assets/images/' + item.path" alt="">
+        <p>{{item.nome}}</p>
+      </li>
+      }
+    </ul>
+  </div>
+
+<div class="autocomplete" #target [style.visibility]="autocompleteShow ? 'visible' : 'hidden' ">
   <ul>
     @for (item of filteredList; track $index) {
     <li [ngStyle]="{'border-top': $index === 0 ? '5px solid #534E41' : ''}" (click)="getCharOnNameList(item)">
@@ -14,4 +37,3 @@
     }
   </ul>
 </div>
-}
