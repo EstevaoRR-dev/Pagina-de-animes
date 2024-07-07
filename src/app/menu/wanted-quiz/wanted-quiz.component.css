@@ -15,6 +15,7 @@
   margin-bottom: 38px;
 }
 
+
 .wanted-box__header{
   width: 100%;
   display: flex;
@@ -69,4 +70,10 @@ span{
 
 .autoComplete{
   width: 400px;
+}
+
+p{
+  color: gray;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }

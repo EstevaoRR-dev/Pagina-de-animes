@@ -66,6 +66,8 @@ export class CompleteCharsComponent {
   charSelected(char:Personagem):void{
     this.charChoosen.emit(char);
     this.inputChar = '';
+    this.autocomplete2Show = true;
+    this.autocompleteShow = false;
   }
 
   getCharOnNameList(charName: {path:String, nome:String}): void{

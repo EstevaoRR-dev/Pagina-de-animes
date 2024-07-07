@@ -6,19 +6,20 @@
     </div>
 
     <div class="wanted-box__img-box">
-      <img src="../../../assets/images/Franky.png" >
+      <img [src]="'../../../assets/images/' + todayChar.path" [style.filter]="blurStatus">
     </div>
 
     <div class="wanted-box__bottom">
       <h3>DEAD OR ALIVE</h3>
     </div>
-
   </div>
+  <p>Cada tentativa desfoca um pouco a imagem</p>
 
 </app-info-box>
 
 <div class="content-box">
-  <app-complete-chars class="autoComplete" [bottomBounds]="bottomBounds()" (listLength)="filteredListLenght = $event"/>
+  <app-complete-chars class="autoComplete" [bottomBounds]="bottomBounds()" (listLength)="filteredListLenght = $event"
+    (charChoosen)="charSelected($event)"/>
 
   <div class="box3">
     <span>O carácter de ontem foi <span class="yesterDay-char">José</span></span>
