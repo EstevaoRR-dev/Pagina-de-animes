@@ -285,8 +285,6 @@ export const personagens = [
     altura: '1m86',
     origem: 'East Blue',
     ultimaRecompensa: '',
-    altura: '1m86',
-    origem: 'East Blue',
     primeiroArco: 'Baratie'
   },
   {
