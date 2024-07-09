@@ -281,15 +281,10 @@ export const personagens = [
     genero: 'homem',
     filiacao: 'Piratas do Krieg',
     akumaNoMi: '',
-<<<<<<< HEAD
-    haki: [],
-=======
     haki: [''],
     ultimaRecompensa: '',
->>>>>>> 1fdb0208b4af9ab92da616ac718687ebf23cd9f1
     altura: '1m86',
     origem: 'East Blue',
-    ultimaRecompensa: '',
     primeiroArco: 'Baratie'
   },
   {
