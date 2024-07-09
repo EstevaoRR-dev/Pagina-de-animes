@@ -24,6 +24,7 @@
   <app-complete-chars class="autocomplete-chars" (charChoosen)="gameStart = true;
    atemptsCount = atemptsCount -1" />
 
+<<<<<<< HEAD
     <div class="answer-titles">
       <span class="titles">Carácter</span>
       <span class="titles">Gênero</span>
@@ -35,21 +36,37 @@
       <span class="titles">Origem</span>
       <span class="titles-wrap">Primeiro arco</span>
     </div>
+=======
+  @if (gameStart) {
+
+    <div class="choosen-character">
+      <div class="answer-titles">
+        <span class="titles">Carácter</span>
+        <span class="titles">Gênero</span>
+        <span class="titles">Filiação</span>
+        <span class="titles">Akuma no mi</span>
+        <span class="titles">Haki</span>
+        <span class="titles">Última recompensa</span>
+        <span class="titles">Altura</span>
+        <span class="titles">Origem</span>
+        <span class="titles">Primeiro arco</span>
+      </div>
+>>>>>>> 605c8d386ed09c33d315d72ca02381218e467e36
 
       <div class="awnser-box">
-        <div class="awnser-box__caracter">
+        <div class="awnser-box__caracter" style="padding: 0; width: 81.59px; height: 87.05px;">
           <img src="{{ '../../../assets/images/' + choosenCharacter.path}}">
         </div>
-        <div class="awnser-box__genero">
+        <div class="awnser-box__genero" style="transition: 2s 5s;">
           <span>{{choosenCharacter.genero}}</span>
         </div>
         <div class="awnser-box__filiacao">
           <span>{{choosenCharacter.filiacao}}</span>
         </div>
         <div class="awnser-box__akuma">
-          <span>{{choosenCharacter.akumaNoMi}}</span>
+          <span>{{getAkumaType(choosenCharacter.akumaNoMi)}}</span>
         </div>
-        <div class="awnser-bos__haki">
+        <div class="awnser-box__haki">
           @if (choosenCharacter.haki.length === 0) {
           <span>Nenhum</span>
           }
@@ -67,16 +84,20 @@
         <div class="awnser-box__wanted">
           <span>{{choosenCharacter.ultimaRecompensa}}</span>
         </div>
-        <div class="answer-box__height">
+        <div class="awnser-box__height">
           <span>{{choosenCharacter.altura}}</span>
         </div>
-        <div class="answer-box__origin">
+        <div class="awnser-box__origin">
           <span>{{choosenCharacter.origem}}</span>
         </div>
         <div class="awnser-box__arc">
           <span>{{choosenCharacter.primeiroArco}}</span>
         </div>
       </div>
+
+    </div>
+  }
+
 
   <div class="box3">
     <span>O carácter de ontem foi <span class="yesterDay-char">{{yesterDay}}</span></span>
