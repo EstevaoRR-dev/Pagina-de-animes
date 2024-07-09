@@ -82,7 +82,7 @@ p{
 
 .box3{
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 360px;
 }
 
 span{
@@ -133,9 +133,8 @@ span{
 }
 
 .awnser-box{
-  height: 120px;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 15px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -152,6 +151,11 @@ span{
 .awnser-box__origin{  animation-duration: 1s; animation-delay: 3.5s;}
 .awnser-box__arc{ animation-duration: 1s; animation-delay: 4s;}
 
+.choosen-caracter{
+  margin-top: 30px;
+  max-height: 500px;
+  overflow: auto;
+}
 
 .awnser-box__caracter img{
   height: 120px;
@@ -190,6 +194,12 @@ span{
 
 .awnser-box span{
   font-size: 14px;
+}
+
+.awnser-box-collum{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 

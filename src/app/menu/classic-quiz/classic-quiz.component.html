@@ -22,7 +22,7 @@
 <div class="content-box">
 
   <app-complete-chars class="autocomplete-chars" (charChoosen)="gameStart = true;
-   atemptsCount = atemptsCount -1" />
+   atemptsCount = atemptsCount -1; choosenCharacter.push($event)" [bottomBounds]="'232px'"  />
 
     
   @if (gameStart) {
@@ -40,48 +40,65 @@
         <span class="titles-wrap">Primeiro arco</span>
       </div>
 
-      <div class="awnser-box">
-        <div class="awnser-box__caracter" style="padding: 0; width: 81.59px; height: 87.05px;">
-          <img src="{{ '../../../assets/images/' + choosenCharacter.path}}">
-        </div>
-        <div class="awnser-box__genero" style="transition: 2s 5s;">
-          <span>{{choosenCharacter.genero}}</span>
-        </div>
-        <div class="awnser-box__filiacao">
-          <span>{{choosenCharacter.filiacao}}</span>
-        </div>
-        <div class="awnser-box__akuma">
-          <span>{{getAkumaType(choosenCharacter.akumaNoMi)}}</span>
-        </div>
-        <div class="awnser-box__haki">
-          @if (choosenCharacter.haki.length === 0) {
-          <span>Nenhum</span>
-          }
-          @if (choosenCharacter.haki.includes('rei')) {
-          <img src="../../../assets/images/haki-king.png">
-          }
-          @if (choosenCharacter.haki.includes('armamento')) {
-          <img src="../../../assets/images/haki-army.png">
-          }
-          @if (choosenCharacter.haki.includes('observação')) {
-          <img src="../../../assets/images/haki-eyes.png">
-          }
 
-        </div>
-        <div class="awnser-box__wanted">
-          <span>{{choosenCharacter.ultimaRecompensa}}</span>
-        </div>
-        <div class="awnser-box__height">
-          <span>{{choosenCharacter.altura}}</span>
-        </div>
-        <div class="awnser-box__origin">
-          <span>{{choosenCharacter.origem}}</span>
-        </div>
-        <div class="awnser-box__arc">
-          <span>{{choosenCharacter.primeiroArco}}</span>
-        </div>
+
+      <div class="awnser-box-collum">
+
+        @for (item of choosenCharacter; track $index) {
+
+          <div class="awnser-box">
+            <div class="awnser-box__caracter" style="padding: 0; width: 81.59px; height: 87.05px;">
+              <img src="{{ '../../../assets/images/' + item.path}}">
+            </div>
+            <div class="awnser-box__genero" [style]=" item.genero === todayCharacter.genero ? 'background-color: #44BB6A'
+              : 'background-color: #D53633' ">
+              <span>{{item.genero}}</span>
+            </div>
+            <div class="awnser-box__filiacao" [style]=" item.filiacao === todayCharacter.filiacao ? 'background-color: #44BB6A'
+              : 'background-color: #D53633' ">
+              <span>{{item.filiacao}}</span>
+            </div>
+            <div class="awnser-box__akuma" [style]=" item.akumaNoMi === todayCharacter.akumaNoMi ? 'background-color: #44BB6A'
+              : 'background-color: #D53633' ">
+              <span>{{getAkumaType(item.akumaNoMi)}}</span>
+            </div>
+            <div class="awnser-box__haki" [style]="getWantedColor(item)">
+              @if (item.haki[0] === '') {
+                <span>Nenhum</span>
+              }
+              @if (item.haki.includes('rei') ) {
+                <img src="../../../assets/images/haki-king.png">
+              }
+              @if (item.haki.includes('armamento')) {
+                <img src="../../../assets/images/haki-army.png">
+              }
+              @if (item.haki.includes('observação')) {
+                <img src="../../../assets/images/haki-eyes.png">
+              }
+            </div>
+
+            <div class="awnser-box__wanted" [style]=" item.ultimaRecompensa === todayCharacter.ultimaRecompensa ?
+             'background-color: #44BB6A' : 'background-color: #D53633' ">
+
+              <span>{{item.ultimaRecompensa === '' ? '0' : item.ultimaRecompensa}}</span>
+            </div>
+
+            <div class="awnser-box__height" [style]=" item.altura === todayCharacter.altura ? 'background-color: #44BB6A'
+              : 'background-color: #D53633' ">
+              <span>{{item.altura}}</span>
+            </div>
+            <div class="awnser-box__origin" [style]=" item.origem === todayCharacter.origem ? 'background-color: #44BB6A'
+              : 'background-color: #D53633' ">
+              <span>{{item.origem}}</span>
+            </div>
+            <div class="awnser-box__arc" [style]=" item.primeiroArco === todayCharacter.primeiroArco ? 'background-color: #44BB6A'
+              : 'background-color: #D53633' ">
+              <span>{{item.primeiroArco}}</span>
+            </div>
+          </div>
+
+        }
       </div>
-
     </div>
   }
 

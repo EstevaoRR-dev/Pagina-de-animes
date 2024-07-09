@@ -1,5 +1,65 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.scene-box{
+  height: 225px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.gif-box{
+  height: 90%;
+  width: 85%;
+  justify-self: center;
+}
+
+@keyframes animation{
+  from{transform: scale(2);}
+  to{transform: scale(1);}
+}
+
+.gif-box img{
+  width: 100%;
+  height: 100%;
+}
+
 .content-box{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 }
+
+.autocomplete{
+  width: 400px;
+  position: relative;
+  left: -5px
+}
+
+.box3{
+  margin-top: 50px;
+  margin-bottom: 220px;
+}
+
+.yesterDay-char{
+  color: red;
+}
+
+span{
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+p{
+  color: gray;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+

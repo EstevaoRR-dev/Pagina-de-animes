@@ -1,17 +1,40 @@
-<div class="box2" [ngClass]="{'box2-onFocus': isInputFocus && filteredList.length > 0}">
+<div class="box2" [ngClass]="{'box2-onFocus': autocompleteShow}"
+  [style]="!autocomplete2Show ? box2TopBorder() : ''">
   <input type="text" class="input-text" placeholder="Nome da personagem, pseudónimo" (focus)="onFocus()"
     (blur)="isInputFocus = true" (input)="filterList()" [(ngModel)]="inputChar">
-  <input type="image" src="../../../assets/images/paper-plane.png" class="paper-plane" (click)="charSelected()">
+  <input type="image" src="../../../assets/images/paper-plane.png" class="paper-plane">
 </div>
-@if (isInputFocus && filteredList.length > 0) {
-<div class="autocomplete" #targetElement>
+<!-- @if (isInputFocus && filteredList.length > 0) {
+  <div class="autocomplete" >
+    <ul>
+      @for (item of filteredList; track $index) {
+      <li [ngStyle]="{'border-top': $index === 0 ? '5px solid #534E41' : ''}" (click)="getCharOnNameList(item)">
+        <img [src]="'../../assets/images/' + item.path" alt="">
+        <p>{{item.nome}}</p>
+      </li>
+      }
+    </ul>
+  </div>
+  } -->
+
+  <div class="autocomplete versionOfTop" [hidden]="autocomplete2Show" [style.top]="bottomBounds">
+    <ul>
+      @for (item of filteredList; track $index) {
+      <li [ngStyle]="{'border-top': $index === 0 ? '5px solid #534E41' : ''}" (click)="getCharOnNameList(item)">
+        <img [src]="'../../assets/images/' + item.path" alt="">
+        <p>{{item.nome}}</p>
+      </li>
+      }
+    </ul>
+  </div>
+
+<div class="autocomplete" #target [style.visibility]="autocompleteShow ? 'visible' : 'hidden' ">
   <ul>
     @for (item of filteredList; track $index) {
-    <li [ngStyle]="{'border-top': $index === 0 ? '5px solid #534E41' : ''}" (click)="optionClicked(item.name)">
+    <li [ngStyle]="{'border-top': $index === 0 ? '5px solid #534E41' : ''}" (click)="getCharOnNameList(item)">
       <img [src]="'../../assets/images/' + item.path" alt="">
-      <p>{{item.name}}</p>
+      <p>{{item.nome}}</p>
     </li>
     }
   </ul>
 </div>
-}

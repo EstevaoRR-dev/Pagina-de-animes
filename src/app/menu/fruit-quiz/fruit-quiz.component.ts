@@ -15,7 +15,26 @@ export class FruitQuizComponent {
   tip2Count = 7;
   tip3Count = 13;
 
+  filteredListLenght!:number;
+
   headerFruit = 'QUE PERSONAGEM COMEU ESTE AKUMA NO MI ?';
 
+  bottomBounds():string{
+    if(this.filteredListLenght >= 4){
+      return '338px';
+    }
+    else if(this.filteredListLenght === 3){
+      return '400px';
+    }
+    else if(this.filteredListLenght === 2){
+      return '462px';
+    }
+    else if(this.filteredListLenght === 1){
+      return '526px';
+    }
+    else{
+      return '';
+    }
+  }
 
 }

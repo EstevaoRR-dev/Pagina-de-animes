@@ -15,6 +15,7 @@
   margin-bottom: 38px;
 }
 
+
 .wanted-box__header{
   width: 100%;
   display: flex;
@@ -50,4 +51,29 @@
 .wanted-box__bottom h3{
   font-size: 32px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.box3{
+  margin-top: 50px;
+  margin-bottom: 180px;
+}
+
+span{
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.yesterDay-char{
+  color: red;
+}
+
+.autoComplete{
+  width: 400px;
+}
+
+p{
+  color: gray;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
